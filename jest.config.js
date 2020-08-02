@@ -5,7 +5,7 @@ module.exports = {
   collectCoverageFrom: ['src/pages/**/*.js', 'src/components/**/**/*.js'],
   coverageDirectory: '__tests__/coverage',
   setupFiles: [
-    // '<rootDir>/node_modules/react-native-gesture-handler/jestSetup.js',
+    '<rootDir>/node_modules/react-native-gesture-handler/jestSetup.js',
     '<rootDir>/__tests__/jest.setup.js'
   ],
   transformIgnorePatterns: [
