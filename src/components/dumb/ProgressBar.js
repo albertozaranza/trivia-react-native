@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components/native';
 import PropTypes from 'prop-types';
 
+import QuestionsContext from '@/contexts/questions';
+
 import colors from '@/constants/colors';
 
-const ProgressBar = ({
-  amount = ['s', 'd', 'f', 'a', 'v', 's', 'd', 'f', 'a', 'v']
-}) => {
+const handleColor = current => {
+  if (current) return colors.currentProgress;
+  return colors.defaultProgressColor;
+};
+
+const ProgressBar = ({ amount }) => {
+  const { progress } = useContext(QuestionsContext);
+
   return (
     <StyledContainer>
-      {amount.map(() => (
-        <StyledProgress correct />
+      {amount.map(({ question }, index) => (
+        <StyledProgress key={question} current={index === progress - 1} />
       ))}
     </StyledContainer>
   );
@@ -34,8 +41,7 @@ const StyledProgress = styled.View`
   height: 20px;
   width: 20px;
   border-radius: 24px;
-  background-color: ${({ correct }) =>
-    correct ? colors.correct : colors.wrong};
+  background-color: ${({ current }) => handleColor(current)};
 `;
 
 export default ProgressBar;

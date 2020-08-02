@@ -2,44 +2,132 @@
   "response_code": 0,
   "results": [
     {
-      "category": "Sports",
-      "type": "multiple",
-      "difficulty": "hard",
-      "question": "What tool lends it&#039;s name to a last-stone advantage in an end in Curling?",
-      "correct_answer": "Hammer",
-      "incorrect_answers": ["Wrench", "Drill", "Screwdriver"]
-    },
-    {
-      "category": "Entertainment: Music",
+      "category": "General Knowledge",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "The song &quot;Feel Good Inc.&quot; by British band Gorillaz features which hip hop group?",
-      "correct_answer": "De La Soul",
-      "incorrect_answers": ["Public Enemy", "OutKast", "Cypress Hill"]
+      "question": "What does the &quot;G&quot; mean in &quot;G-Man&quot;?",
+      "correct_answer": "Government",
+      "incorrect_answers": ["Going", "Ghost", "Geronimo"]
     },
     {
       "category": "Entertainment: Video Games",
-      "type": "boolean",
-      "difficulty": "easy",
-      "question": "Ana was added as a new hero for the game Overwatch on July 19th, 2016.",
-      "correct_answer": "True",
-      "incorrect_answers": ["False"]
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which was the first video game to be produced by development company Rare?",
+      "correct_answer": "Slalom",
+      "incorrect_answers": ["R.C. Pro-Am", "Donkey Kong Country", "Battletoads"]
     },
     {
-      "category": "Science & Nature",
-      "type": "boolean",
+      "category": "History",
+      "type": "multiple",
       "difficulty": "medium",
-      "question": "Sound can travel through a vacuum.",
+      "question": "The creator of the Enigma Cypher and Machine was of what nationality?",
+      "correct_answer": "German",
+      "incorrect_answers": ["American", "British", "Polish"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "In Kill La Kill, the weapon of the main protagonist is a katana. ",
       "correct_answer": "False",
       "incorrect_answers": ["True"]
     },
     {
-      "category": "Entertainment: Music",
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which of the following names is the &quot;Mega Man&quot; Franchise known as in Japan?",
+      "correct_answer": "Rockman",
+      "incorrect_answers": ["Paperman", "Scissorsman", "Mega Man"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
       "type": "multiple",
       "difficulty": "medium",
-      "question": "Which Aerosmith album featured &quot;Walk This Way&quot;?",
-      "correct_answer": "Toys in the Attic",
-      "incorrect_answers": ["Rocks", "Get Your Wings", "Draw the Line"]
+      "question": "What is the name of the device that allows for infinite energy in the anime &quot;Dimension W&quot;?",
+      "correct_answer": "Coils",
+      "incorrect_answers": ["Wires", "Collectors", "Tesla"]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which of these cards from &quot;Magic: The Gathering&quot; has a flavor text that begins with &quot;Oi oi oi&quot;?",
+      "correct_answer": "Uthden Troll",
+      "incorrect_answers": ["Lotleth Troll", "Albino Troll", "Harvester Troll"]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Where is Apple Inc. headquartered?",
+      "correct_answer": "Cupertino, California",
+      "incorrect_answers": [
+        "Redwood City, California",
+        "Redmond, Washington",
+        "Santa Monica, CA"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which English county will you find the University of East Anglia?",
+      "correct_answer": "Norfolk",
+      "incorrect_answers": ["Suffolk", "Essex", "Cambridgeshire"]
+    },
+    {
+      "category": "Science: Mathematics",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "An equilateral triangle always has every angle measuring 60&deg;.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Which punk rock band released hit songs such as &quot;Californication&quot;, &quot;Can&#039;t Stop&quot; and &quot;Under the Bridge&quot;?",
+      "correct_answer": "Red Hot Chilli Peppers",
+      "incorrect_answers": ["Green Day", "Linkin Park", "Foo Fighters"]
+    },
+    {
+      "category": "Science: Computers",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "How many bytes are in a single Kibibyte?",
+      "correct_answer": "1024",
+      "incorrect_answers": ["2400", "1000", "1240"]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Who is the main heroine of the anime, Full Metal Panic!",
+      "correct_answer": "Kaname Chidori",
+      "incorrect_answers": ["Teletha Testarossa", "Melissa Mao", "Kyoko Tokiwa"]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "During World War I, which nation&#039;s monarchs were blood related?",
+      "correct_answer": "England, Germany, Russia",
+      "incorrect_answers": [
+        "France, Russia, Germany",
+        "Serbia, Russia, Croatia",
+        "Germany, Spain, Austria"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In World of Warcraft the default UI color that signifies Druid is what?",
+      "correct_answer": "Orange",
+      "incorrect_answers": ["Brown", "Green", "Blue"]
     }
   ]
 }

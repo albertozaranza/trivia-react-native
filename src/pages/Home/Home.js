@@ -15,7 +15,7 @@ const Home = () => {
     <StyledView>
       <StyledTitle>Trivia</StyledTitle>
       <Picker title='Number of questions:' options={options.amount} />
-      <Button marginTop={16} onPress={() => navigate('Questions')}>
+      <Button marginTop={72} onPress={() => navigate('Questions')}>
         Start
       </Button>
     </StyledView>
@@ -32,7 +32,7 @@ const StyledView = styled.View`
 
 const StyledTitle = styled.Text`
   font-size: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 `;
 
 export default Home;

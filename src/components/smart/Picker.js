@@ -3,7 +3,7 @@ import { Picker as NativePicker } from '@react-native-community/picker';
 import styled from 'styled-components/native';
 import PropTypes from 'prop-types';
 
-import HomeContext from '@/contexts/home';
+import QuestionsContext from '@/contexts/questions';
 
 import colors from '@/constants/colors';
 
@@ -17,7 +17,7 @@ const Picker = ({
   title,
   options
 }) => {
-  const { amount, setAmount } = useContext(HomeContext);
+  const { amount, setAmount } = useContext(QuestionsContext);
 
   const [selectedValue, setSelectedValue] = useState(amount);
 

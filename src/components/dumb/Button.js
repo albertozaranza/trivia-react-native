@@ -48,7 +48,9 @@ Button.propTypes = {
   onPress: PropTypes.func.isRequired
 };
 
-const StyledButton = styled.TouchableOpacity`
+const StyledButton = styled.TouchableOpacity.attrs({
+  delayPressIn: 0
+})`
   width: 200px;
   height: 48px;
   justify-content: center;
