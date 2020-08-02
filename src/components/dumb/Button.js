@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components/native';
 import PropTypes from 'prop-types';
 
@@ -65,4 +65,4 @@ const StyledText = styled.Text`
   color: ${colors.white};
 `;
 
-export default Button;
+export default memo(Button);

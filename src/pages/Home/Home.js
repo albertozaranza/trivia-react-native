@@ -1,21 +1,21 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import styled from 'styled-components/native';
 
 import Button from '@/components/dumb/Button';
 import Picker from '@/components/smart/Picker';
 
-import HomeContext from '@/contexts/home';
-
 import options from '@/constants/options';
+import colors from '@/constants/colors';
 
 const Home = () => {
-  const { amount } = useContext(HomeContext);
+  const { navigate } = useNavigation();
 
   return (
     <StyledView>
       <StyledTitle>Trivia</StyledTitle>
       <Picker title='Number of questions:' options={options.amount} />
-      <Button marginTop={16} onPress={() => console.log(amount)}>
+      <Button marginTop={16} onPress={() => navigate('Questions')}>
         Start
       </Button>
     </StyledView>
@@ -27,6 +27,7 @@ const StyledView = styled.View`
   justify-content: center;
   align-items: center;
   padding: 32px;
+  background-color: ${colors.white};
 `;
 
 const StyledTitle = styled.Text`

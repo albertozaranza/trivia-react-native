@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, memo } from 'react';
 import { Picker as NativePicker } from '@react-native-community/picker';
 import styled from 'styled-components/native';
 import PropTypes from 'prop-types';
@@ -88,4 +88,4 @@ const StyledPickerContainer = styled.View`
   border-bottom-width: 1px;
 `;
 
-export default Picker;
+export default memo(Picker);

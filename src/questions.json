@@ -1,0 +1,45 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Sports",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What tool lends it&#039;s name to a last-stone advantage in an end in Curling?",
+      "correct_answer": "Hammer",
+      "incorrect_answers": ["Wrench", "Drill", "Screwdriver"]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The song &quot;Feel Good Inc.&quot; by British band Gorillaz features which hip hop group?",
+      "correct_answer": "De La Soul",
+      "incorrect_answers": ["Public Enemy", "OutKast", "Cypress Hill"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "Ana was added as a new hero for the game Overwatch on July 19th, 2016.",
+      "correct_answer": "True",
+      "incorrect_answers": ["False"]
+    },
+    {
+      "category": "Science & Nature",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "Sound can travel through a vacuum.",
+      "correct_answer": "False",
+      "incorrect_answers": ["True"]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which Aerosmith album featured &quot;Walk This Way&quot;?",
+      "correct_answer": "Toys in the Attic",
+      "incorrect_answers": ["Rocks", "Get Your Wings", "Draw the Line"]
+    }
+  ]
+}
