@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Picker as NativePicker } from '@react-native-community/picker';
 import styled from 'styled-components/native';
 import PropTypes from 'prop-types';
 
-import { handlePixels } from 'utils';
+import HomeContext from '@/contexts/home';
+
 import colors from '@/constants/colors';
+
+import { handlePixels } from '@/utils';
 
 const Picker = ({
   marginTop,
@@ -14,7 +17,14 @@ const Picker = ({
   title,
   options
 }) => {
+  const { setAmount } = useContext(HomeContext);
+
   const [selectedValue, setSelectedValue] = useState();
+
+  const handleSelectedValue = value => {
+    setSelectedValue(value);
+    setAmount(value);
+  };
 
   return (
     <StyledContainer
@@ -27,7 +37,7 @@ const Picker = ({
       <StyledPickerContainer>
         <NativePicker
           selectedValue={selectedValue}
-          onValueChange={setSelectedValue}
+          onValueChange={handleSelectedValue}
           mode='dropdown'
         >
           {options.map(({ label, value }) => (

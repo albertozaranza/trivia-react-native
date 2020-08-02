@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import colors from '@/constants/colors';
 
-import { handlePixels } from 'utils';
+import { handlePixels } from '@/utils';
 
 const Button = ({
   marginTop,
