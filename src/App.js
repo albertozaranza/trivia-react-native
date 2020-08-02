@@ -11,19 +11,23 @@ const App = () => {
     <StyledView>
       <StyledTitle>Trivia</StyledTitle>
       <Picker title='Number of questions:' options={options.amount} />
-      <Button onPress={() => {}}>Iniciar</Button>
+      <Button marginTop={16} onPress={() => {}}>
+        Start
+      </Button>
     </StyledView>
   );
 };
 
 const StyledView = styled.View`
   flex: 1;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 160px 32px;
+  padding: 32px;
 `;
 
 const StyledTitle = styled.Text`
   font-size: 48px;
+  margin-bottom: 48px;
 `;
+
 export default App;

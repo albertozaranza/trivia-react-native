@@ -3,11 +3,26 @@ import { Picker as NativePicker } from '@react-native-community/picker';
 import styled from 'styled-components/native';
 import PropTypes from 'prop-types';
 
-const Picker = ({ title, options }) => {
+import { handlePixels } from 'utils';
+import colors from '@/constants/colors';
+
+const Picker = ({
+  marginTop,
+  marginBottom,
+  marginLeft,
+  marginRight,
+  title,
+  options
+}) => {
   const [selectedValue, setSelectedValue] = useState();
 
   return (
-    <StyledContainer>
+    <StyledContainer
+      marginTop={marginTop}
+      marginBottom={marginBottom}
+      marginLeft={marginLeft}
+      marginRight={marginRight}
+    >
       <StyledText>{title}</StyledText>
       <StyledPickerContainer>
         <NativePicker
@@ -24,7 +39,18 @@ const Picker = ({ title, options }) => {
   );
 };
 
+Picker.defaultProps = {
+  marginTop: 0,
+  marginBottom: 0,
+  marginLeft: 0,
+  marginRight: 0
+};
+
 Picker.propTypes = {
+  marginTop: PropTypes.number,
+  marginBottom: PropTypes.number,
+  marginLeft: PropTypes.number,
+  marginRight: PropTypes.number,
   title: PropTypes.string.isRequired,
   options: PropTypes.arrayOf(
     PropTypes.shape({
@@ -36,18 +62,20 @@ Picker.propTypes = {
 
 const StyledContainer = styled.View`
   width: 100%;
+  margin-top: ${({ marginTop }) => handlePixels(marginTop)};
+  margin-bottom: ${({ marginBottom }) => handlePixels(marginBottom)};
+  margin-right: ${({ marginRight }) => handlePixels(marginRight)};
+  margin-left: ${({ marginLeft }) => handlePixels(marginLeft)};
 `;
 
 const StyledText = styled.Text`
-  margin: 8px;
   font-size: 16px;
 `;
 
 const StyledPickerContainer = styled.View`
-  padding: 2px 4px;
-  border-color: #000;
-  border-width: 1px;
-  border-radius: 8px;
+  padding: 4px;
+  border-bottom-color: ${colors.black};
+  border-bottom-width: 1px;
 `;
 
 export default Picker;
