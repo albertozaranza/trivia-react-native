@@ -17,9 +17,9 @@ const Picker = ({
   title,
   options
 }) => {
-  const { setAmount } = useContext(HomeContext);
+  const { amount, setAmount } = useContext(HomeContext);
 
-  const [selectedValue, setSelectedValue] = useState();
+  const [selectedValue, setSelectedValue] = useState(amount);
 
   const handleSelectedValue = value => {
     setSelectedValue(value);

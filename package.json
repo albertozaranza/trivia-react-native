@@ -34,8 +34,6 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-root-import": "^6.5.0",
     "cz-lean-changelog": "^0.0.2",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-native": "0.63.2",
@@ -59,7 +57,9 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "husky": "^4.2.5",
     "jest": "^25.1.0",
+    "lint-staged": "^10.2.11",
     "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.13.1"
   },
